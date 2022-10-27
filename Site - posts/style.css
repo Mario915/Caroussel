@@ -1,0 +1,81 @@
+	* {
+        box-sizing: border-box;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.carrosel {
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0); 
+}
+
+img {
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+
+
+#button {
+    text-size-adjust: 10px;
+}
+
+h1 {
+    padding: 5px 10px;
+    margin: 10px;
+    color: aquamarine;
+    border: 0px solid #CCC;
+    background: rgb(33, 93, 33);
+    border-radius: 5px;
+}
+
+h1:hover {
+    background: rgba(4, 73, 4, 0.734);
+    color: rgb(75, 11, 11); 
+    border-color: rgb(32, 228, 18);
+}
+
+ul {
+    margin: 0;
+    padding:0;
+}
+ 
+li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+
+li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: #903;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: rgb(80, 26, 26);
+    color: #000; 
+    border-color: #000;
+}
